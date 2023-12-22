@@ -1,0 +1,140 @@
+.body {
+  background-color: #15202B;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.container {
+  background: #15202B;
+  border-radius: 12px;
+  display: inline-block;
+  padding: 20px;
+  margin-top: 20px; 
+}
+
+#inputbox {
+    border: 2px solid #9f9d9e;
+    border-radius: 10px; 
+    padding: 12px; 
+    margin-bottom: 15px; 
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+#inputbox:focus {
+    border-color: #3498db;
+}
+
+#to-do-list {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px; 
+    font-size: 24px;
+    color: white;
+}
+
+#headings {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 10px; 
+    background-color: #5b9c30;
+    border-radius: 8px;
+    color: white; 
+}
+
+
+
+#calender {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 8px; 
+    font-size: 15px;
+    background-color: #3498db;
+    color: white;
+    
+  }
+
+  .styled-date-input label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .styled-date-input {
+    margin-bottom: 15px;
+  }
+  
+
+  #calender:hover {
+    border-color: #3498db;
+    cursor: pointer;
+  }
+  
+
+  #calender:focus {
+    border-color: #3498db;
+  }
+
+  #addtask {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #addtask:hover {
+    background-color: #2980b9;
+  }
+  
+  #addtask:active {
+    background-color: #21618c;
+  }
+
+  #smalldevicedatelabel{
+    color: white;
+  }
+
+  #logo{
+    width: 30px;
+    position: relative;
+    top: 97px;
+    right: 10px;
+  }
+  
+  #message-container {
+    position: fixed;
+    bottom: 0;
+    left: -100%; 
+    width: 100%;
+    background-color: #25699a;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    transition: left 0.5s ease-in-out;
+  }
+
+  @media only screen and (min-width: 400px) {
+    #smalldevicedatelabel {
+      display: none;
+    }
+  }
+  @media only screen and (min-width: 400px) {
+    #logo{
+      position: relative;
+      right: 80px;
+    }
+  }
